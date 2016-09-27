@@ -1,10 +1,8 @@
-// import valencia from '../../../index.js'
+import valencia from '../../../index.js'
 
-const feed = window.valencia.default({
-  token: '207617934.c76948d.91f3cd6735ac4cf09c01aa8fab1145e7',
+const feed = valencia({
+  token: '143903426.c76948d.816afe8b2721400195b569fa4f1ec7c7',
   count: 4
-}, (data) => {
-  console.log(data)
+}, ({ images, res, next }) => {
+  // render
 })
-
-window.feed = feed
