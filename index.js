@@ -32,7 +32,7 @@ export default ({ token, count }, cb) => {
     response: done 
   })
 
-  get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${token}&count=${count || 1}`, response)
+  token && get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${token}&count=${count || 1}`, response)
 
   return data 
 }
