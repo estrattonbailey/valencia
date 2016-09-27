@@ -14,8 +14,6 @@ export default ({ token, count }, cb) => {
     data.next = next(res.pagination.next_url)
     data.res = res
 
-    cb(data)
-
     return {
       images: data.images,
       next: data.next,
@@ -23,10 +21,7 @@ export default ({ token, count }, cb) => {
     }
   }
 
-  const next = url => done => get(url, done ? (err, res) => {
-    let data = response(err, res)
-    done(data)
-  } : response)
+  const next = url => done => get(url, (err, res) => done ? done(response(err, res)) : cb(response(err, res)))
 
   const get = (url, done) => jsonp(url, {
     response: done 
