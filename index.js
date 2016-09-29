@@ -25,7 +25,7 @@ export default ({ token, count }, cb = () => {}) => {
 
   const get = (url, done) => jsonp(url, { response: done })
 
-  token && get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${token}&count=${count || 1}`, response)
+  token && get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${token}&count=${count || 1}`, (err, res) => cb(response(err, res)))
 
   return data 
 }
