@@ -1,10 +1,8 @@
-# valencia 
-A hyper-minimal wrapper to fetch Instagram posts from an authenticated user.
-
-**~1.31kb gzipped** 
+# valencia
+Tiny helper to fetch Instagram posts. **553 bytes gzipped.**
 
 ## Install
-```
+```bash
 npm i valencia --save
 ```
 
@@ -34,4 +32,5 @@ feed.next(({images, res, next}) => // render next posts)
 ## Dependencies 
 - [micro-jsonp](https://github.com/estrattonbailey/micro-jsonp/) A hyper-minimal standalone jsonp implementation in ES6. by [@estrattonbailey](https://github.com/estrattonbailey)
 
-MIT License
+## License
+MIT License © [Eric Bailey](https://estrattonbailey.com)
