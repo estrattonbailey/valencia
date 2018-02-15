@@ -6,6 +6,9 @@
   "module": "dist/valencia.es.js",
   "main": "dist/valencia.js",
   "umd:main": "dist/valencia.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle build",
     "watch": "microbundle watch"
