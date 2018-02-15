@@ -1,7 +1,7 @@
 {
   "name": "valencia",
-  "version": "0.0.4",
-  "description": "Tiny library to fetch Instagram posts.",
+  "version": "1.0.0",
+  "description": "Tiny helper to fetch Instagram posts. 553 bytes gzipped.",
   "source": "index.js",
   "module": "dist/valencia.es.js",
   "main": "dist/valencia.js",
